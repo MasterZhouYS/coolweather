@@ -83,7 +83,7 @@ public class AutoUpdateService extends Service {
      * 更新必应每日一图
      */
     private void updateBingPic(){
-        String requestBingPic="http://guolin.tech/api/bing_pid";
+        String requestBingPic="http://guolin.tech/api/bing_pic";
         HttpUtil.sendOKHttpRequest(requestBingPic, new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
@@ -100,5 +100,6 @@ public class AutoUpdateService extends Service {
                 editor.apply();
             }
         });
+
     }
 }
