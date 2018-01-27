@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by Administrator on 2018/1/26 0026.
  */
 public class Forecast {
-    public String data;
+    public String date;
     @SerializedName("tmp")
     public Temperature temperature;
     @SerializedName("cond")
